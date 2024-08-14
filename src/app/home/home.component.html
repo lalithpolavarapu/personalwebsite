@@ -1,0 +1,12 @@
+<div class="home-container">
+    <h1>Welcome to My Resume Website</h1>
+    <form [formGroup]="homeForm" (ngSubmit)="onSubmit()">
+      <label for="name">Name:</label>
+      <input id="name" type="text" formControlName="name">
+
+      <label for="email">Email:</label>
+      <input id="email" type="email" formControlName="email">
+
+      <button type="submit">Go to Resume</button>
+    </form>
+  </div>
